@@ -1,30 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## NextJS 적용 내용
 
-## Getting Started
+- [x] 페이지 레이아웃 (Intro, Page layout)
+- [x] Dynamic Routes, next/link
+- [x] 서버사이드 렌더링 (Server-side Rendering/SSR/Dynamic Rendering)
+- [x] 에러 페이지, 환경 변수 (Custom Error Page, Environment Variables)
+- [x] 정적 생성(Sktatic Generation) - getStaticProps, getStaticPaths
+- [x] isFallback
 
-First, run the development server:
+## 시연 영상
+
+![시연 영상](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0f8313c1-515d-4d31-b9bc-9868b9e5a690/nextjs.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210929%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210929T074551Z&X-Amz-Expires=86400&X-Amz-Signature=1578a42b6a0030cd004801e22416d9590ed46610d1df6d8d5159a0df066f69ae&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22nextjs.gif%22)
+
+## 설치 및 시작 방법
 
 ```bash
+// [development]
+//.env.development 파일에 apiUrl 작성
 npm run dev
-# or
-yarn dev
+
+// [production]
+//.env.production 파일에 apiUrl 작성
+npm run build && npm run start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
